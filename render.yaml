@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: neburaftp
+    runtime: python
+    region: ohio
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: TG_API_ID
+        sync: false
+      - key: TG_API_HASH
+        sync: false
+      - key: TG_BOT_TOKEN
+        sync: false
+      - key: TG_CHAT_ID
+        sync: false
+      - key: AUTH_USER
+        value: admin
+      - key: AUTH_PASS
+        sync: false

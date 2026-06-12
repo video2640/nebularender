@@ -1,0 +1,5 @@
+aiohttp>=3.9
+pyrogram>=2.0
+tgcrypto>=1.2
+pymongo>=4.5
+dnspython>=2.4
